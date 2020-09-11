@@ -3,20 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Module2;
+package com.sg.classroster.ui;
 
-import com.sg.classroster.ui.UserIO;
 import java.util.Scanner;
 
 /**
  *
  * @author Jtooleyful
  */
-/*
-implements UserIO interface
-*/
-public class UserIOImpl implements UserIO {
-
+public class UserIOConsoleImpl implements UserIO {
     Scanner sc = new Scanner(System.in);
     
     @Override
@@ -109,5 +104,4 @@ public class UserIOImpl implements UserIO {
         } while (value < min || value > max);
         return value;
     }
-    
 }
